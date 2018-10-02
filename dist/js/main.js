@@ -21,7 +21,9 @@ document.onreadystatechange = function () {
           }
 
 
-
+          function players(event); {
+            event.target.innherHTML 
+          }
 
           function pressX(event) {
             event.target.innerHTML = "X";
