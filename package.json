@@ -1,0 +1,33 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "It will be a lot of fun.  Once it's completed.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "./node_modules/.bin/sass --watch src/sass/main.scss dist/css/main.css",
+    "browser-sync": "./node_modules/.bin/browser-sync start --server 'dist' --files 'dist'",
+    "copy": "./node_modules/.bin/cpx \"src/**/*.html\" dist --watch",
+    "dev": "./node_modules/.bin/concurrently \"npm run browser-sync\" \"npm run sass\" \"npm run copy\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinepk/Tictactoe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devinepk/Tictactoe/issues"
+  },
+  "homepage": "https://github.com/devinepk/Tictactoe#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.3",
+    "browser-sync": "^2.24.7",
+    "concurrently": "^4.0.1",
+    "cpx": "^1.5.0",
+    "sass": "^1.14.1"
+  },
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "cpx": "^1.5.0"
+  }
+}
