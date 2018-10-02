@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "./node_modules/.bin/sass --watch src/sass/main.scss dist/css/main.css",
     "browser-sync": "./node_modules/.bin/browser-sync start --server 'dist' --files 'dist'",
-    "copy": "./node_modules/.bin/cpx \"src/**/*.html\" dist --watch",
+    "copy": "./node_modules/.bin/cpx \"src/**/*.{html,js}\" dist --watch",
     "dev": "./node_modules/.bin/concurrently \"npm run browser-sync\" \"npm run sass\" \"npm run copy\""
   },
   "repository": {

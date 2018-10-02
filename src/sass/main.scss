@@ -1,0 +1,44 @@
+// Bootstrap and its default variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+$body-bg:       $gray-200;
+$body-color:    $gray-900;
+
+
+
+$primary:       #011627; // dark blue
+$secondary:     #FDFFFC; // white
+$success:       #2EC4B6; // green
+$info:          #E71D36; // red
+$warning:       #FF9F1C; // yellow
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+
+
+/* Style for all keys */
+.key {
+  width: 150px;
+  height: 150px;
+  font-size: 50px;
+  border: none;
+  margin-right: 0px;
+}
+
+/* Numeric button color */
+.numeric {
+  background: $success;
+}
+
+/* Changes the numeric button color when selected */
+.numeric:active {
+  background-color: darkgray;
+}
+
+/* Removes the blue border when selected */
+button:focus {
+  outline: 0;
+}
